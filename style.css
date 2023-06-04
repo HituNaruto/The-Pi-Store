@@ -1,0 +1,270 @@
+#slider-menu {
+    position: fixed;
+    top: 0px;
+    left: -250px; /* Initial position outside the viewport */
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+    transition: left 1s ease;
+  }
+  
+  #slider-menu ul {
+    list-style: none;
+    padding: 70px;
+    margin: 1px;
+  }
+  
+  #slider-menu li {
+    padding: 10px;
+  }
+  
+  #slider-menu a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #toggle-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  
+  
+  .containerR{
+  text-align : right;
+  }
+  
+  
+  
+  .containerC{
+  text-align : center;
+  }
+  
+  
+  .containerL{
+  float : Left;
+  background-color : transparent;
+  width : 30px;
+  }
+  
+  
+  
+  
+  
+  
+  body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/072/376/original/network-connections-on-white-background-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .front-page {
+        background-image: url("https://m.media-amazon.com/images/I/51je41IvPES._AC_UF1000,1000_QL80_.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      line-height :5;
+      
+        
+      }
+  .front-page h1{
+  font-size : 70px;
+      font-family :  Arial, sans-serif; 
+      color : grey; 
+  }
+  
+  .front-page h6{
+  font-size : 20px;
+      font-family :  Arial, sans-serif; 
+      color : grey; 
+  }
+  
+  
+  
+  
+  
+  h2	{
+      line-height :1;
+      font-size : 50px;
+      font-family : Microsoft Yi Baiti;  
+      color : grey;
+        
+      }
+  
+  
+  h3	{
+      line-height :1;
+      font-size : 20px;
+      font-family : Microsoft Yi Baiti;  
+      color : grey;
+        
+      }
+  
+  
+  button {
+        background-color:rgba(255, 255, 255, 0.7);
+        border: none;
+        width:100px;
+      height:40px;
+      font-family : Consolas;
+      font-size : 20px;
+      cursor:pointer;
+      
+      }
+  
+  
+  .special-button {
+    background-color: transparent; 
+    border : none;	
+    color:grey ;#fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .special-button:hover {
+    background-color:rgba(0, 0, 0, 0.3) ;
+  }
+  
+  
+  .social-button {
+    background-color: transparent; 
+    border : none;	
+    color:grey ;#fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family:Microsoft Yi Baiti; 
+  }
+  
+  .about-section h2 {
+    font-size: 30px;
+  }
+  
+  .column {
+    display: inline-block;
+    width: 24%;
+  font-size : 30px; 
+    vertical-align: top;
+    padding: 20px;
+    box-sizing: border-box; /* Add this line */
+  }
+  
+  .column img {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .column p {
+    text-align: center;
+    margin-top: 10px;
+    font-family:Microsoft Yi Baiti;
+    font-size:50px;
+  }
+  
+  
+  
+  .grey-section {
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .grey-column {
+  font-family:Microsoft Yi Baiti;
+  font-size : 20px;
+    flex: 1;
+  }
+  
+  .grey-column img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .team-section {
+    text-align: center;	
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family:Microsoft Yi Baiti; 
+  }
+  
+  .team-section h2 {
+    font-size: 24px;
+  }
+  
+  .team-column {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+    padding: 20px;
+    box-sizing: border-box; /* Add this line */
+  }
+  
+  .team-column img {
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .team-column p {
+    text-align: center;
+    margin-top: 10px;
+    font-family:Microsoft Yi Baiti;
+    font-size:20px;
+  }
+  
+  
+  
+  .grid-container {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 10px;
+          }
+  
+  .grid-item {
+      text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  .our-work-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family:Microsoft Yi Baiti;
+  }
+  
+  
+  
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .copyright {
+    font-family : Microsoft Yi Baiti;
+    font-size: 20px;
+  }

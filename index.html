@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example with Background Image</title>
+<link rel="stylesheet" href="static\css\style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+
+
+
+
+
+
+<body>
+<header>
+<div class="containerR">
+
+
+<div id="slider-menu" class="closed">
+    <ul>
+      <li><a href="#"><button class="special-button">Categories</button></a></li>
+      <li><a href="#"><button class="special-button">Projects</button></a></li>
+      <li><a href="C:\Users\HituNaruto\Desktop\The Pi store\Shopping.html"><button class="special-button">Shopping</button></a></li>
+      <li><a href="#"><button class="special-button">Team</button></a></li>
+      <li><a href="#"><button class="special-button">Help and Contact</button></a></li>
+    </ul>
+  </div>
+	<button id="toggle-menu" onclick="toggleSliderMenu()" class = "containerL"><img src="https://cdn-icons-png.flaticon.com/128/10080/10080458.png" width= "40" height = "40">_</button>
+    <script>
+        // Get all buttons with the 'myButton' class
+        var buttons = document.getElementsByClassName("toggle-menu");
+
+        // Loop through each button and attach a click event listener
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function() {
+                var buttonId = this.id;
+                console.log("Button Clicked: " + buttonId);
+
+                // You can also send the buttonId in the AJAX request
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "/button-click", true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.send(JSON.stringify({ buttonId: buttonId }));
+            });
+        }
+    </script>
+
+	<a href="https://google.com"><button>Home</button></a>
+
+	<button>About</button>
+
+	 <a href= "https://wa.me/919444788755"><button>Contact</button></a>
+</div>
+
+
+</header>
+<div class="front-page">
+<center><h1>Welcome to The Pi store</h1></center>
+<h6><center>-All about Drones</center>
+
+<a href="https://www.youtube.com/"><button class="social-button"> <img src = "https://cdn-icons-png.flaticon.com/128/10110/10110362.png" height = "50px" width = "50px"></button></a>
+<a href="https://www.facebook.com/"><button class="social-button"> <img src = "https://cdn-icons-png.flaticon.com/128/2168/2168281.png" height = "50px" width = "50px"></button></a>
+
+<a href="https://www.facebook.com/"><button class="social-button"> <img src = "https://cdn-icons-png.flaticon.com/128/733/733641.png" height = "50px" width = "50px"></button></a>
+
+</h6>
+
+<p></p>
+</div>
+
+
+
+
+<div class="about-section">
+    <h2>ABOUT THE COMPANY</h2>
+    <!-- Additional content about the company can be added here -->
+<div class="about-section">
+    <div class="column">
+      <img src="https://cdn-icons-png.flaticon.com/128/483/483141.png" alt="Icon">
+      <p><h3>Responsive</h3><br>We understand the importance of being readily available to our clients. Our team is committed to providing timely and dependable support, guaranteeing a smooth and seamless experience.</p>
+    </div>
+    <div class="column">
+      <img src="https://cdn-icons-png.flaticon.com/128/535/535234.png" alt="Icon">
+      <p><h3>Passion</h3><br>Our team's genuine passion for what we do sets us apart. We harness that passion to bring forth creative solutions that inspire and leave a lasting impact.</p>
+    </div>
+    <div class="column">
+      <img src="https://cdn-icons-png.flaticon.com/128/636/636600.png" alt="Icon">
+      <p><h3>Desgin</h3><br>Our passion for design fuels our creativity, enabling us to craft captivating solutions that seamlessly blend aesthetics and functionality.</p>
+    </div>
+    <div class="column">
+      <img src="https://cdn-icons-png.flaticon.com/128/484/484613.png" alt="Icon">
+      <p><h3>Support</h3><br>Join us in supporting our startup and be part of our journey to make a positive impact. With passion and innovation, we are dedicated to shaping the future. Will you join us on this exciting endeavor?</p>
+    </div>
+  </div>
+  </div>
+
+
+<section class="grey-section">
+    <div class="grey-column">
+  <h2>We know design.</h2>
+      <p>We, a passionate team of engineering students, are proud to lead this startup driven by friendship. With a shared vision, our goal is to fulfill your desires and exceed your expectations in your project endeavors. We are here to guide you every step of the way, ensuring your success.</p>
+    </div>
+    <div class="grey-column">
+<h2></h2>
+      <img src="https://cdn.mos.cms.futurecdn.net/hzD7qTpfDSwW924cRV7G2J.jpg" alt="Image" >
+    </div>
+  </section>
+
+<div class="team-section">
+    <h2>MEET OUR TEAM</h2>
+    <!-- Additional content about the company can be added here -->
+<div class="team-section">
+    <div class="team-column">
+      <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Icon">
+      <p><h2>Founder</h2>We understand the importance of being readily available to our clients. Our team is committed to providing timely and dependable support, guaranteeing a smooth and seamless experience.</p>
+    </div>
+    <div class="team-column">
+      <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Icon">
+      <p><h2>Manager</h2>Our team's genuine passion for what we do sets us apart. We harness that passion to bring forth creative solutions that inspire and leave a lasting impact.</p>
+    </div>
+    <div class="team-column">
+      <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Icon">
+      <p><h2>Designer</h2>Our passion for design fuels our creativity, enabling us to craft captivating solutions that seamlessly blend aesthetics and functionality.</p>
+    </div>
+    <div class="team-column">
+      <img src="https://cdn-icons-png.flaticon.com/128/149/149071.png" alt="Icon">
+      <p><h2>Programmer</h2>Join us in supporting our startup and be part of our journey to make a positive impact. With passion and innovation, we are dedicated to shaping the future. Will you join us on this exciting endeavor?</p>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+<div class = "our-work-section"><center>
+    <h2 >Our Work</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 1">
+            <h3>Image 1</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 2">
+            <h3>Image 2</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 3">
+            <h3>Image 3</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 4">
+            <h3>Image 4</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 5">
+            <h3>Image 5</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 6">
+            <h3>Image 6</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 7">
+            <h3>Image 7</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 8">
+            <h3>Image 8</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 9">
+            <h3>Image 9</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 10">
+            <h3>Image 10</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 11">
+            <h3>Image 11</h3>
+        </div>
+        <div class="grid-item">
+            <img src="https://m.media-amazon.com/images/I/61UbMRbL-jL._AC_UF1000,1000_QL80_.jpg" height = "300px" width=" 300px" alt="Image 12">
+            <h3>Image 12</h3>
+        </div>
+    </div></center>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="copyright">
+      &copy; 2023 Copy Rights. All rights reserved.
+    </div>
+  </footer>
+</body>
+<script src="\static\js\scripts.js"></script>
+
+</html>
